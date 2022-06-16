@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关键帧动画-逐帧动画案例</title>
+    <style>
+        div{
+            height: 300px;
+            width: 180px;
+            background-image: url(./charector.png);
+            
+            animation: run 1s step-end infinite;
+        }
+        @keyframes run {
+            0%{
+                background-position: 0px 0;
+                /*background-position:水平位置 垂直位置 */
+            }
+            14.3%{
+                background-position: -180px 0;
+            }
+            23.6%{
+                background-position: -360px 0;
+            }
+            42.9%{
+                background-position: -540px 0;
+            }
+            57.2%{
+                background-position: -720px 0;
+            }
+            71.5%{
+                background-position: -900px 0;
+            }
+            85.8%{
+                background-position: -1080px 0;
+            }
+            100%{
+                background-position: -1260px 0;
+            }
+        }
+        /* 为了能看见最后一帧，设为倒数第二帧 */
+    </style>
+</head>
+<body>
+    <div class=""></div>
+</body>
+</html>
